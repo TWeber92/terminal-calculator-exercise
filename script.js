@@ -8,7 +8,7 @@ const operators = {
   "%": (a, b) => a % b,
 };
 
-const terminalcalculation = () => {
+const terminalCalculation = () => {
   do {
     const mathOper = getOperator();
     const firstNum = getNumber("first");
@@ -38,4 +38,4 @@ function getNumber(order) {
 function getResult(num1, num2, operator) {
   return operators[operator](num1, num2);
 }
-terminalcalculation();
+terminalCalculation();
